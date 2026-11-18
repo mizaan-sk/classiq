@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../style.css">
 </head>
-<body class="min-h-screen bg-[#f7f7f7] font-['Poppins'] text-black antialiased courses-page">
+<body class="min-h-screen bg-[#f7f7f7] font-['Poppins'] text-black antialiased courses-page py-10">
     <header class="site-header course-header">
         <div class="course-header-brand">
             <a class="brand flex items-center" href="/" aria-label="ClassIQ home">
@@ -27,7 +27,7 @@
                 </span>
                 <span class="course-brand-name">ClassIQ</span>
             </a>
-            <a class="dashboard-link" href="/courses/" aria-current="page">Dashboard</a>
+            <a class="dashboard-link" href="/" aria-current="page">Dashboard</a>
         </div>
         <nav class="course-account" aria-label="Account">
             <a class="nav-button action-button" href="/login/">Login</a>
@@ -43,13 +43,109 @@
 
         <section class="course-list-section" aria-labelledby="all-courses-title">
             <h2 id="all-courses-title" class="course-list-title">All Courses <img src="../assets/courses-arrow.png" alt="" aria-hidden="true"></h2>
-            <div class="course-grid" aria-hidden="true">
-                <div class="course-placeholder"></div>
-                <div class="course-placeholder"></div>
-                <div class="course-placeholder"></div>
-                <div class="course-placeholder"></div>
-                <div class="course-placeholder"></div>
-                <div class="course-placeholder"></div>
+            <div class="course-grid">
+                <article class="catalog-course-card">
+                    <div class="catalog-course-image">
+                        <img src="../assets/courses/web-development.jpg" alt="Laptop displaying a web development workspace" loading="lazy" decoding="async">
+                        <span class="catalog-course-category">Development</span>
+                    </div>
+                    <div class="catalog-course-content">
+                        <div class="catalog-course-meta">
+                            <span>12 weeks</span>
+                        </div>
+                        <h3>Web Development Bootcamp</h3>
+                        <p>Build responsive websites with HTML, CSS, and JavaScript through hands-on projects.</p>
+                        <div class="catalog-course-footer">
+                            <span class="catalog-course-level">Beginner</span>
+                            <a href="/signup/">Enroll now <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="catalog-course-card">
+                    <div class="catalog-course-image">
+                        <img src="../assets/courses/data-science.jpg" alt="Analytics charts displayed on a computer monitor" loading="lazy" decoding="async">
+                        <span class="catalog-course-category">Data Science</span>
+                    </div>
+                    <div class="catalog-course-content">
+                        <div class="catalog-course-meta">
+                            <span>10 weeks</span>
+                        </div>
+                        <h3>Data Science Essentials</h3>
+                        <p>Explore real datasets and learn to turn your findings into useful insights.</p>
+                        <div class="catalog-course-footer">
+                            <span class="catalog-course-level">Beginner</span>
+                            <a href="/signup/">Enroll now <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="catalog-course-card">
+                    <div class="catalog-course-image">
+                        <img src="../assets/courses/ui-ux-design.jpg" alt="Designer sketching a user interface wireframe" loading="lazy" decoding="async">
+                        <span class="catalog-course-category">Design</span>
+                    </div>
+                    <div class="catalog-course-content">
+                        <div class="catalog-course-meta">
+                            <span>6 weeks</span>
+                        </div>
+                        <h3>UI/UX Design Foundations</h3>
+                        <p>Practice user journeys, wireframes, and clickable interface prototypes.</p>
+                        <div class="catalog-course-footer">
+                            <span class="catalog-course-level">All levels</span>
+                            <a href="/signup/">Enroll now <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="catalog-course-card">
+                    <div class="catalog-course-image">
+                        <img src="../assets/courses/mobile-apps.jpg" alt="Smartphone showing a collection of mobile apps" loading="lazy" decoding="async">
+                        <span class="catalog-course-category">Development</span>
+                    </div>
+                    <div class="catalog-course-content">
+                        <div class="catalog-course-meta">
+                            <span>8 weeks</span>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Plan and build a useful mobile app, from the first screen to a working prototype.</p>
+                        <div class="catalog-course-footer">
+                            <span class="catalog-course-level">Intermediate</span>
+                            <a href="/signup/">Enroll now <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="catalog-course-card">
+                    <div class="catalog-course-image">
+                        <img src="../assets/courses/digital-marketing.jpg" alt="Laptop displaying a digital campaign analytics dashboard" loading="lazy" decoding="async">
+                        <span class="catalog-course-category">Marketing</span>
+                    </div>
+                    <div class="catalog-course-content">
+                        <div class="catalog-course-meta">
+                            <span>7 weeks</span>
+                        </div>
+                        <h3>Digital Marketing Strategy</h3>
+                        <p>Learn practical content, search, and campaign basics with guided examples.</p>
+                        <div class="catalog-course-footer">
+                            <span class="catalog-course-level">Beginner</span>
+                            <a href="/signup/">Enroll now <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="catalog-course-card">
+                    <div class="catalog-course-image">
+                        <img src="../assets/courses/business.jpg" alt="Small team collaborating around laptops" loading="lazy" decoding="async">
+                        <span class="catalog-course-category">Business</span>
+                    </div>
+                    <div class="catalog-course-content">
+                        <div class="catalog-course-meta">
+                            <span>5 weeks</span>
+                        </div>
+                        <h3>Business &amp; Entrepreneurship</h3>
+                        <p>Shape an early idea into a practical plan for starting and growing a business.</p>
+                        <div class="catalog-course-footer">
+                            <span class="catalog-course-level">All levels</span>
+                            <a href="/signup/">Enroll now <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

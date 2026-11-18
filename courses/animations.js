@@ -16,7 +16,7 @@ if (document.body.classList.contains("courses-page") &&
             easing: [0.22, 1, 0.36, 1]
         });
 
-        animate(Array.from(element.querySelectorAll(".course-placeholder")), {
+        animate(Array.from(element.querySelectorAll(".catalog-course-card")), {
             opacity: [0, 1],
             y: [28, 0],
             scale: [0.96, 1]
