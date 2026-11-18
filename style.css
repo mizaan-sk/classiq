@@ -21,6 +21,11 @@ body {
     border-radius: 0;
 }
 
+.auth-main {
+    min-height: calc(100vh - 3.75rem);
+    min-height: calc(100dvh - 3.75rem);
+}
+
 .form-field::placeholder {
     opacity: 1;
     font-size: 1.15em;
@@ -229,6 +234,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    .auth-main {
+        min-height: 0;
+    }
+
     body.home-page > header {
         position: relative;
         left: 1vw;
