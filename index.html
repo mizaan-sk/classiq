@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f7f7">
+    <title>ClassIQ | Learn with confidence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page min-h-screen bg-[#f7f7f7] font-['Poppins'] text-black antialiased">
+    <header class="mx-auto flex w-full items-center justify-between px-5 pt-6 md:w-[82.6vw] md:px-0 md:pt-[2.8vw]">
+        <div class="flex items-center gap-2 md:gap-[0.95vw] max-md:mr-[2px]">
+            <a class="brand flex items-center gap-1.5 md:gap-[0.95vw]" href="/" aria-label="ClassIQ home">
+                <span class="brand-mark grid place-items-center rounded-lg bg-[#b8f56a]">
+                    <svg aria-hidden="true" viewBox="0 0 32 32" fill="none">
+                        <path d="M10 22.5 14 17l-2-4 5-4 3 2-3 5-5 1-2 5.5Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="9.5" cy="23" r="2.3" fill="currentColor"/>
+                        <circle cx="12" cy="12.5" r="2.3" fill="currentColor"/>
+                        <circle cx="21" cy="10" r="2.3" fill="currentColor"/>
+                        <circle cx="18" cy="16" r="2.3" fill="currentColor"/>
+                        <path d="m22.5 6.5 2-2m-1 6 2-2m-7 11 2-2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="text-xl font-semibold tracking-tight md:text-[2.05vw]">ClassIQ</span>
+            </a>
+            <a class="text-[10px] text-[#4c4c4c] transition-colors hover:text-black md:ml-[3.7vw] md:text-[1.25vw]" href="#courses">Courses</a>
+        </div>
+        <nav class="flex items-center gap-3 md:gap-[2.1vw]" aria-label="Account">
+            <a class="nav-button rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-transform hover:-translate-y-0.5 md:px-[1.85vw] md:py-[0.72vw] md:text-[1.25vw]" href="/login">Login</a>
+            <a class="nav-button rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-transform hover:-translate-y-0.5 md:px-[1.85vw] md:py-[0.72vw] md:text-[1.25vw]" href="/signup">SignUp</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section home-shell mx-auto mt-12 grid grid-cols-1 items-center gap-8 md:mt-[5.5vw] md:grid-cols-[1.02fr_0.98fr] md:gap-0" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title" class="max-w-2xl text-4xl font-light leading-tight tracking-[-0.045em] sm:text-5xl md:max-w-none md:text-[4.5vw] md:leading-[1.55]">
+                    <span class="block">Empower Your</span>
+                    <span class="block">Learning Journey</span>
+                    <span class="block">with <strong class="classiq-highlight font-bold">ClassIQ<img class="classiq-underline" src="assets/classiq-underline.png" alt="" aria-hidden="true"></strong></span>
+                </h1>
+                <p class="mt-5 max-w-xl text-xs leading-relaxed text-[#99999d] md:mt-[1.5vw] md:max-w-[48vw] md:text-[1.05vw] md:leading-[1.55]">
+                    Unlock a world of knowledge and skills with our innovative online courses, expert instructors, and interactive learning tools.
+                </p>
+                <a class="mt-6 inline-flex items-center rounded-md bg-[#b8f56a] px-5 py-2.5 text-sm font-medium transition-transform hover:-translate-y-0.5 md:mt-[2.4vw] md:px-[2vw] md:py-[1vw] md:text-[1.05vw]" href="#courses">Explore Courses</a>
+            </div>
+
+            <div class="hero-art-wrap relative mx-auto h-[88vw] w-full max-w-lg md:mx-0 md:h-[39vw] md:max-w-none">
+                <div class="hero-glow absolute"></div>
+                <!-- <div class="hero-note absolute rounded-[2vw] bg-white/80 p-4 text-xs text-[#5b5b5b] shadow-sm md:rounded-[1.6vw] md:px-[2vw] md:py-[1.2vw] md:text-[1vw]">
+                    Learn something new<br><strong class="text-[#262626]">every single day</strong>
+                </div> -->
+                <img class="hero-illustration absolute" src="assets/instructor.png" alt="A friendly instructor waving">
+                <img class="hero-doodle absolute" src="assets/group-76.png" alt="" aria-hidden="true">
+                <img class="hero-spark absolute" src="assets/group.png" alt="" aria-hidden="true">
+            </div>
+        </section>
+
+        <section class="trusted home-shell mx-auto mt-12 text-center md:mt-[11.5vw]" aria-label="Trusted companies">
+            <h2 class="text-base font-medium text-[#606064] md:text-[1.95vw]">Trusted by 5,000+ Companies Worldwide</h2>
+            <div class="company-logos mt-6 overflow-hidden text-[#b3b1bc] md:mt-[2.2vw]">
+                <div class="company-track">
+                    <div class="company-logo-group flex shrink-0 items-center gap-8 pr-8 md:gap-[5vw] md:pr-[5vw]" role="list">
+                        <span class="google-logo" role="listitem">Google</span>
+                        <span class="netflix-logo" role="listitem">NETFLIX</span>
+                        <span class="airbnb-logo" role="listitem"><span aria-hidden="true">△</span> airbnb</span>
+                        <span class="amazon-logo" role="listitem">amazon</span>
+                        <span class="facebook-logo" role="listitem">facebook.</span>
+                    </div>
+                    <div class="company-logo-group flex shrink-0 items-center gap-8 pr-8 md:gap-[5vw] md:pr-[5vw]" aria-hidden="true">
+                        <span class="google-logo">Google</span>
+                        <span class="netflix-logo">NETFLIX</span>
+                        <span class="airbnb-logo"><span>△</span> airbnb</span>
+                        <span class="amazon-logo">amazon</span>
+                        <span class="facebook-logo">facebook.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section home-shell mx-auto mt-16 text-center md:mt-[10.3vw]" aria-labelledby="courses-title">
+            <h2 id="courses-title" class="text-base font-medium text-[#606064] md:text-[1.95vw]">Certified Courses for <strong class="font-bold text-[#292929]">Professionals</strong></h2>
+            <div class="course-grid mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 md:mt-[11.5vw] md:grid-cols-3 md:gap-[6.4vw]">
+                <article class="course-card flex flex-col items-center justify-center rounded-2xl bg-[#ededf0]">
+                    <span class="course-icon grid place-items-center rounded-full bg-[#f7f7f7] shadow-[0_3px_10px_#00000012]">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="6" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19h17M9 10h2m2 0h2m-6 3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </span>
+                    <h3 class="mt-4 text-sm font-medium text-[#444] md:mt-[1.5vw] md:text-[1.35vw]">Web Development</h3>
+                    <a class="mt-3 rounded-md bg-[#b8f56a] px-4 py-2 text-[10px] font-medium transition-colors hover:bg-[#a8e65a] md:mt-[1.5vw] md:px-[1.4vw] md:py-[0.7vw] md:text-[0.85vw]" href="#courses">View Courses</a>
+                </article>
+                <article class="course-card flex flex-col items-center justify-center rounded-2xl bg-[#ededf0]">
+                    <span class="course-icon grid place-items-center rounded-full bg-[#f7f7f7] shadow-[0_3px_10px_#00000012]">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="6" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19h17M9 10h2m2 0h2m-6 3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </span>
+                    <h3 class="mt-4 text-sm font-medium text-[#444] md:mt-[1.5vw] md:text-[1.35vw]">Data Science</h3>
+                    <a class="mt-3 rounded-md bg-[#b8f56a] px-4 py-2 text-[10px] font-medium transition-colors hover:bg-[#a8e65a] md:mt-[1.5vw] md:px-[1.4vw] md:py-[0.7vw] md:text-[0.85vw]" href="#courses">View Courses</a>
+                </article>
+                <article class="course-card flex flex-col items-center justify-center rounded-2xl bg-[#ededf0]">
+                    <span class="course-icon grid place-items-center rounded-full bg-[#f7f7f7] shadow-[0_3px_10px_#00000012]">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="6" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19h17M9 10h2m2 0h2m-6 3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </span>
+                    <h3 class="mt-4 text-sm font-medium text-[#444] md:mt-[1.5vw] md:text-[1.35vw]">App Development</h3>
+                    <a class="mt-3 rounded-md bg-[#b8f56a] px-4 py-2 text-[10px] font-medium transition-colors hover:bg-[#a8e65a] md:mt-[1.5vw] md:px-[1.4vw] md:py-[0.7vw] md:text-[0.85vw]" href="#courses">View Courses</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="solution-section home-shell mx-auto mt-20 grid grid-cols-1 items-center gap-10 md:mt-[17.2vw] md:grid-cols-[38vw_1fr] md:gap-[7.8vw]" aria-labelledby="solution-title">
+            <div class="solution-art relative mx-auto flex w-full max-w-sm items-end justify-center overflow-hidden rounded-lg bg-[#ededf0] md:mx-0 md:h-[36vw] md:max-w-none">
+                <div class="solution-backdrop absolute rounded-[2vw] bg-white/60"></div>
+                <img class="solution-illustration relative" src="assets/instructor.png" alt="A friendly instructor welcoming learners">
+            </div>
+            <div class="solution-copy">
+                <h2 id="solution-title" class="text-2xl font-bold text-[#393939] md:text-[2.55vw]">All-In-One Solution</h2>
+                <ul class="mt-5 space-y-3 text-sm text-[#626262] md:mt-[1vw] md:space-y-[0.7vw] md:text-[1.6vw]">
+                    <li class="flex items-center gap-3 md:gap-[1.1vw]"><span class="feature-icon"><img src="assets/feature-menu.png" alt="" aria-hidden="true"></span>Flexible Learning</li>
+                    <li class="flex items-center gap-3 md:gap-[1.1vw]"><span class="feature-icon"><img src="assets/feature-spark.png" alt="" aria-hidden="true"></span>Expert Instructors</li>
+                    <li class="flex items-center gap-3 md:gap-[1.1vw]"><span class="feature-icon"><img src="assets/feature-community.png" alt="" aria-hidden="true"></span>Interactive Community</li>
+                </ul>
+                <a class="mt-6 inline-flex items-center gap-2 rounded-md bg-[#b8f56a] px-5 py-2.5 text-sm font-semibold text-[#333] transition-transform hover:-translate-y-0.5 md:mt-[2.5vw] md:gap-[0.8vw] md:px-[1.8vw] md:py-[1.1vw] md:text-[1.45vw]" href="/signup">
+                    <img class="h-3 w-3 object-contain md:h-[1vw] md:w-[1vw]" src="assets/join-now-arrow.png" alt="" aria-hidden="true">Join Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="newsletter" class="site-footer mx-auto mt-24 w-[87%] md:mt-[26.8vw]">
+        <div class="footer-top grid grid-cols-1 gap-10 md:grid-cols-[1fr_auto_auto] md:gap-[10vw]">
+            <div class="newsletter">
+                <a class="brand flex w-fit items-center gap-2" href="/" aria-label="ClassIQ home">
+                    <span class="footer-mark grid place-items-center rounded-md bg-[#b8f56a]">
+                        <svg aria-hidden="true" viewBox="0 0 32 32" fill="none">
+                            <path d="M10 22.5 14 17l-2-4 5-4 3 2-3 5-5 1-2 5.5Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9.5" cy="23" r="2.3" fill="currentColor"/><circle cx="12" cy="12.5" r="2.3" fill="currentColor"/><circle cx="21" cy="10" r="2.3" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span class="text-sm font-semibold">ClassIQ</span>
+                </a>
+                <h2 class="mt-4 text-sm font-medium">Subscribe</h2>
+                <p class="mt-1 text-xs text-[#99999d]">Subscribe for the latest courses, tips, and updates. Join our learning community today!</p>
+                <form id="newsletter-form" class="mt-4 flex max-w-md items-center gap-2 rounded-md bg-white p-1.5" novalidate>
+                    <label class="sr-only" for="newsletter-email">Your email</label>
+                    <input class="min-w-0 flex-1 bg-transparent px-3 py-2 text-xs outline-none placeholder:text-[#aaa]" id="newsletter-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
+                    <button class="rounded-md bg-[#b8f56a] px-3 py-2 text-xs font-medium hover:bg-[#a8e65a]" type="submit">Subscribe</button>
+                </form>
+                <p id="newsletter-message" class="mt-2 text-xs text-[#507a1b]" role="status" aria-live="polite"></p>
+            </div>
+            <div>
+                <h2 class="text-sm font-medium">ClassIQ Business</h2>
+                <ul class="mt-2 space-y-2 text-xs text-[#555]">
+                    <li><a class="hover:underline" href="#solution-title">Teach on ClassIQ</a></li>
+                    <li><a class="hover:underline" href="#solution-title">Teaching Tools</a></li>
+                    <li><a class="hover:underline" href="#courses">ClassIQ app</a></li>
+                    <li><a class="hover:underline" href="mailto:hello@classiq.example">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-sm font-medium">Careers</h2>
+                <ul class="mt-2 space-y-2 text-xs text-[#555]">
+                    <li><a class="hover:underline" href="#courses">Blog</a></li>
+                    <li><a class="hover:underline" href="#solution-title">Affiliate</a></li>
+                    <li><a class="hover:underline" href="mailto:support@classiq.example">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom mt-8 flex flex-col items-center justify-between gap-5 border-t border-[#e5e5e7] py-5 text-xs md:mt-[1.5vw] md:flex-row md:py-[2.5vw]">
+            <p>© 2024 ClassIQ. All rights reserved.</p>
+            <div class="flex items-center gap-2" aria-label="Social links">
+                <a class="social-link" href="#newsletter" aria-label="Instagram">◎</a>
+                <a class="social-link" href="#newsletter" aria-label="X">𝕏</a>
+                <a class="social-link" href="#newsletter" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

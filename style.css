@@ -1,0 +1,482 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.brand-mark {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: none;
+}
+
+.brand-mark svg {
+    width: 1.65rem;
+    height: 1.65rem;
+}
+
+.auth-card {
+    border-radius: 0;
+}
+
+.form-field::placeholder {
+    opacity: 1;
+    font-size: 1.15em;
+}
+
+.newsletter input::placeholder {
+    font-size: 1.15em;
+}
+
+.home-shell {
+    width: calc(100% - 2.5rem);
+}
+
+.classiq-highlight {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.classiq-underline {
+    position: absolute;
+    left: 0;
+    bottom: -0.12em;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.hero-art-wrap {
+    min-height: 20rem;
+}
+
+.hero-glow {
+    width: 110%;
+    height: 100%;
+    left: -5%;
+    top: 0;
+    border-radius: 9999px;
+    background: radial-gradient(ellipse, #d9f1b8 0%, #ebf6dc 43%, transparent 74%);
+    filter: blur(0.65rem);
+}
+
+.hero-note {
+    left: 9%;
+    bottom: 42%;
+    width: 85%;
+    min-height: 5.75rem;
+    border-radius: 1.25rem;
+    z-index: 3;
+}
+
+.hero-illustration {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    right: -5%;
+    bottom: 0;
+    z-index: 2;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.hero-doodle {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 7%;
+    top: 24%;
+    z-index: 3;
+}
+
+.hero-spark {
+    width: 2.25rem;
+    height: 2.25rem;
+    right: 7%;
+    top: 17%;
+    z-index: 3;
+}
+
+.company-track {
+    display: flex;
+    width: max-content;
+    animation: company-marquee 26s linear infinite;
+}
+
+@keyframes company-marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.google-logo {
+    font-size: 1.45rem;
+    font-weight: 500;
+    letter-spacing: -0.07em;
+}
+
+.netflix-logo {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.08em;
+}
+
+.airbnb-logo,
+.amazon-logo,
+.facebook-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+}
+
+.airbnb-logo span {
+    margin-right: 0.15rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.amazon-logo::after {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 0.18rem;
+    margin: -0.15rem auto 0;
+    border-bottom: 2px solid currentColor;
+    border-radius: 50%;
+}
+
+.course-card {
+    min-height: 12rem;
+    border: 1px solid #e8e8ea;
+}
+
+.course-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.course-icon svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.solution-art {
+    height: 19rem;
+}
+
+.solution-backdrop {
+    width: 72%;
+    height: 54%;
+    left: 18%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.solution-illustration {
+    width: 80%;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.feature-icon {
+    display: inline-grid;
+    width: 2rem;
+    height: 2rem;
+    flex: none;
+    place-items: center;
+    border: 1px solid #e2e2e5;
+    border-radius: 9999px;
+    background: #f3f3f5;
+    color: #141414;
+    font-size: 0.9rem;
+    box-shadow: 0 3px 8px #0000000d;
+}
+
+.feature-icon img {
+    width: 1.15rem;
+    height: 1.15rem;
+    object-fit: contain;
+}
+
+.footer-mark {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.footer-mark svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.social-link {
+    display: grid;
+    width: 1.8rem;
+    height: 1.8rem;
+    place-items: center;
+    background: #b8f56a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: transform 180ms ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    body.home-page > header {
+        position: relative;
+        left: 1vw;
+    }
+
+    .brand-mark {
+        width: 3.4vw;
+        height: 3.4vw;
+        border-radius: 0.65vw;
+    }
+
+    .brand-mark svg {
+        width: 2.15vw;
+        height: 2.15vw;
+    }
+
+    main > .auth-card {
+        width: 27.7vw;
+        padding: 3.5vw 2.4vw 2.4vw;
+    }
+
+    .auth-card h1 {
+        margin-bottom: 2.7vw;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .auth-card > p {
+        margin-bottom: 0;
+    }
+
+    .nav-button {
+        border-radius: 0.55vw;
+    }
+
+    .home-shell {
+        width: 82.6vw;
+        position: relative;
+        left: 1vw;
+    }
+
+    .hero-art-wrap {
+        min-height: 0;
+    }
+
+    .hero-glow {
+        width: 34vw;
+        height: 47vw;
+        left: 12vw;
+        top: -4vw;
+        background: radial-gradient(ellipse, #d9f1b8 0%, #ebf6dc 43%, transparent 74%);
+        filter: blur(0.8vw);
+    }
+
+    .hero-note {
+        left: 20%;
+        right: auto;
+        bottom: 14.5%;
+        width: 65%;
+        min-height: 7.8vw;
+        padding: 1.2vw 2vw;
+        border-radius: 1.6vw;
+        font-size: 1vw;
+    }
+
+    .hero-illustration {
+        height: 42vw;
+        right: -6.7vw;
+    }
+
+    .hero-doodle {
+        width: 3vw;
+        height: 3vw;
+        left: 2vw;
+        top: 8vw;
+    }
+
+    .hero-spark {
+        width: 2.6vw;
+        height: 2.6vw;
+        right: -1vw;
+        top: 6vw;
+    }
+
+    .google-logo {
+        font-size: 3vw;
+    }
+
+    .netflix-logo {
+        font-size: 2.8vw;
+    }
+
+    .airbnb-logo,
+    .amazon-logo,
+    .facebook-logo {
+        font-size: 2.7vw;
+    }
+
+    .airbnb-logo span {
+        font-size: 3vw;
+    }
+
+    .course-card {
+        height: 20.2vw;
+        min-height: 0;
+        border-radius: 2.3vw;
+        box-shadow: 0 2px 3px #00000008;
+    }
+
+    .course-icon {
+        width: 3.7vw;
+        height: 3.7vw;
+    }
+
+    .course-icon svg {
+        width: 1.6vw;
+        height: 1.6vw;
+    }
+
+    .solution-art {
+        width: 38vw;
+        height: 36vw;
+        border-radius: 0.5vw;
+    }
+
+    .solution-backdrop {
+        border-radius: 2vw;
+    }
+
+    .solution-illustration {
+        width: 28.4vw;
+        left: 2.2vw;
+    }
+
+    .feature-icon {
+        width: 3.6vw;
+        height: 3.6vw;
+    }
+
+    .feature-icon img {
+        width: 1.4vw;
+        height: 1.4vw;
+    }
+
+    .footer-mark {
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 0.5vw;
+    }
+
+    .footer-mark svg {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .site-footer {
+        font-size: 1vw;
+        padding-top: 5.4vw;
+    }
+
+    .site-footer h2 {
+        font-size: 1.1vw;
+    }
+
+    .site-footer p,
+    .site-footer li,
+    .site-footer input,
+    .site-footer button {
+        font-size: 0.95vw;
+    }
+
+    .site-footer .newsletter > p {
+        font-size: 0.85vw;
+    }
+
+    .newsletter form {
+        width: 32vw;
+        max-width: 32vw;
+        margin-top: 0.3vw;
+        padding: 0.55vw;
+    }
+
+    .newsletter > h2 {
+        margin-top: 1vw;
+    }
+
+    .newsletter > p {
+        margin-top: 0.25vw;
+    }
+
+    .newsletter #newsletter-message:empty {
+        display: none;
+    }
+
+    .newsletter form input {
+        padding: 0.7vw 1.2vw;
+    }
+
+    .newsletter form button {
+        padding: 0.75vw 1.2vw;
+    }
+
+    .footer-mark + span {
+        font-size: 1.5vw;
+    }
+
+    .footer-bottom {
+        margin-top: 1.5vw;
+        padding-top: 2.5vw;
+        padding-bottom: 1.9vw;
+    }
+
+    .social-link {
+        width: 2.5vw;
+        height: 2.5vw;
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .hero-note {
+        left: 20%;
+        bottom: 14.5%;
+        width: 65%;
+        min-height: 6.7rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .company-track {
+        display: block;
+        width: 100%;
+        animation: none;
+        transform: none;
+    }
+
+    .company-logo-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 1.75rem;
+        padding-right: 0;
+    }
+
+    .company-logo-group[aria-hidden="true"] {
+        display: none;
+    }
+}
