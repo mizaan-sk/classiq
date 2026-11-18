@@ -158,6 +158,23 @@ body {
     border: 1px solid #e8e8ea;
 }
 
+a.action-button,
+button.action-button {
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+a.action-button:hover,
+button.action-button:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 7px 16px #0000001a;
+}
+
+a.action-button:active,
+button.action-button:active {
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
 .course-icon {
     width: 2.6rem;
     height: 2.6rem;
@@ -469,6 +486,19 @@ body {
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
+    }
+
+    a.action-button,
+    button.action-button {
+        transition: none;
+    }
+
+    a.action-button:hover,
+    button.action-button:hover,
+    a.action-button:active,
+    button.action-button:active {
+        transform: none;
+        box-shadow: none;
     }
 
     .company-track {

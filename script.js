@@ -37,21 +37,21 @@ if (!reducedMotion) {
             delay: 0.2,
             easing: [0.22, 1, 0.36, 1]
         });
-
-        inView(".trusted, .courses-section, .solution-section, .site-footer", (element) => {
-            animate(element, { opacity: [0, 1], y: [22, 0] }, {
-                duration: 0.65,
-                easing: [0.22, 1, 0.36, 1]
-            });
-        });
-
-        inView(".course-card", (element) => {
-            animate(element, { opacity: [0, 1], y: [18, 0] }, {
-                duration: 0.55,
-                easing: [0.22, 1, 0.36, 1]
-            });
-        });
     }
+
+    inView(".trusted, .courses-section, .solution-section, .site-footer", (element) => {
+        animate(element, { opacity: [0, 1], y: [22, 0] }, {
+            duration: 0.65,
+            easing: [0.22, 1, 0.36, 1]
+        });
+    }, { amount: 0.15 });
+
+    inView(".course-card, .solution-copy li, .footer-top > div", (element) => {
+        animate(element, { opacity: [0, 1], y: [18, 0] }, {
+            duration: 0.55,
+            easing: [0.22, 1, 0.36, 1]
+        });
+    }, { amount: 0.2 });
 }
 
 if (authForm && authMessage) {
