@@ -1,3 +1,43 @@
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("assets/fonts/poppins-300.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("assets/fonts/poppins-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("assets/fonts/poppins-500.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("assets/fonts/poppins-600.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("assets/fonts/poppins-700.ttf") format("truetype");
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,6 +69,23 @@ body {
 .form-field::placeholder {
     opacity: 1;
     font-size: 1.15em;
+}
+
+.field-error {
+    margin-top: 0.35rem;
+    color: #b42318;
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+.field-error:empty {
+    display: none;
+}
+
+.form-field[aria-invalid="true"],
+#newsletter-email[aria-invalid="true"] {
+    border-color: #b42318;
+    box-shadow: 0 0 0 1px #b42318;
 }
 
 .newsletter input::placeholder {
@@ -250,14 +307,283 @@ button.action-button:active {
     transform: translateY(-2px);
 }
 
+.courses-page {
+    background: #f5f5f5;
+}
+
+.course-header,
+.course-page-shell {
+    width: min(82.6%, 1100px);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:3vw;
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27.5px 0;
+}
+
+.course-header-brand,
+.course-header .brand,
+.course-account {
+    display: flex;
+    align-items: center;
+}
+
+.course-header-brand {
+    gap: 4.65vw;
+}
+
+.course-header .brand {
+    gap: 0.95vw;
+}
+
+.course-brand-name {
+    font-size: clamp(1.25rem, 2.05vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.dashboard-link {
+    color: #4c4c4c;
+    font-size: 10px;
+    transition: color 180ms ease;
+}
+
+.dashboard-link:hover {
+    color: #000;
+}
+
+.course-account {
+    gap: 2.1vw;
+}
+
+.courses-page .nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.55vw;
+    background: #000;
+    padding: 0.72vw 1.85vw;
+    color: #fff;
+    font-size: clamp(0.8rem, 1.25vw, 1rem);
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.course-banner {
+    position: relative;
+    height: clamp(12.4375rem, 25.1vw, 16rem);
+    overflow: hidden;
+    border-radius: 5px;
+    background: #ededf0;
+    isolation: isolate;
+    padding: 35px 29px;
+}
+
+.course-banner::before {
+    position: absolute;
+    right: 1%;
+    bottom: -48%;
+    z-index: -1;
+    width: 35%;
+    height: 140%;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, #d9f1b8 0%, #ebf6dc 48%, transparent 75%);
+    content: "";
+    filter: blur(0.6rem);
+}
+
+.course-banner::after {
+    position: absolute;
+     top: 67%;
+    right: 0;
+    bottom: auto;
+    width: 30%;
+    height: min(29.08vw, 880px);
+    z-index: 0;
+    border-radius: 50%;
+    background: #f7f7f7;
+    content: "";
+}
+
+.course-banner-title {
+    position: relative;
+    z-index: 2;
+    font-size: clamp(0.875rem, 1.05vw, 1rem);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.course-banner-person {
+    position: absolute;
+    right: 4%;
+    bottom: 0;
+    z-index: 1;
+    width: auto;
+    height: clamp(9.5rem, 20.5vw, 10.125rem);
+    max-width: none;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.course-list-section {
+    margin-top: 53px;
+}
+
+.course-list-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 9px;
+    color: #414141;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.course-list-title img {
+    width: 13px;
+    height: auto;
+    flex: none;
+}
+
+.courses-page .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 7.8%;
+    row-gap: 32px;
+    margin-top: 16px;
+}
+
+.course-placeholder {
+    height: clamp(9.375rem, 18.9vw, 10rem);
+    background: #ededf0;
+}
+
+.course-placeholder:nth-child(3n + 1) {
+    border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+    .course-header,
+    .course-page-shell {
+        width: calc(100% - 40px);
+    }
+
+    .course-header {
+        padding: 18px 0;
+    }
+
+    .course-header-brand {
+        gap: 8px;
+    }
+
+    .course-header .brand {
+        gap: 6px;
+    }
+
+    .course-account {
+        gap: 12px;
+    }
+
+    .courses-page .nav-button {
+        border-radius: 0.375rem;
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+
+    .course-banner {
+        height: 190px;
+        padding: 30px 22px;
+    }
+
+    .course-list-section {
+        margin-top: 40px;
+    }
+
+    .courses-page .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 18px;
+        row-gap: 18px;
+    }
+}
+
+@media (max-width: 639px) {
+    /* .course-banner-person {
+        display: none;
+    } */
+
+    .course-banner::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-link {
+        display: none;
+    }
+
+    .course-header,
+    .course-page-shell {
+        width: calc(100% - 32px);
+    }
+
+    .course-header {
+        padding: 16px 0;
+    }
+
+    .course-banner {
+        margin-top: 16px;
+        padding: 28px 18px;
+    }
+}
+
+.site-header {
+    display: flex;
+    width: 82.6vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding: clamp(1.5rem, 2.8vw, 2.8rem) 0 0;
+}
+
+.site-header .brand-mark {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+}
+
+.site-header .brand-mark svg {
+    width: 1.65rem;
+    height: 1.65rem;
+}
+
+@media (max-width: 767px) {
+    .site-header {
+        width: calc(100% - 40px);
+    }
+}
+
 @media (min-width: 768px) {
+    .course-banner::after {
+      top: 77%;
+        right: 9px;
+        width: 23%;
+        height: min(29.08vw, 880px);
+        bottom: auto;
+    }
+
     .auth-main {
         min-height: 0;
     }
 
-    body.home-page > header {
-        position: relative;
-        left: 1vw;
+    .dashboard-link {
+        font-size: clamp(0.8rem, 1.25vw, 1rem);
     }
 
     .brand-mark {
@@ -267,6 +593,17 @@ button.action-button:active {
     }
 
     .brand-mark svg {
+        width: 2.15vw;
+        height: 2.15vw;
+    }
+
+    .site-header .brand-mark {
+        width: 3.4vw;
+        height: 3.4vw;
+        border-radius: 0.65vw;
+    }
+
+    .site-header .brand-mark svg {
         width: 2.15vw;
         height: 2.15vw;
     }
@@ -317,7 +654,7 @@ button.action-button:active {
         min-height: 7.8vw;
         padding: 1.2vw 2vw;
         border-radius: 1.6vw;
-        font-size: 1vw;
+        font-size: clamp(0.75rem, 1vw, 1rem);
     }
 
     .hero-illustration {
@@ -340,38 +677,38 @@ button.action-button:active {
     }
 
     .google-logo {
-        font-size: 3vw;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
     }
 
     .netflix-logo {
-        font-size: 2.8vw;
+        font-size: clamp(1.4rem, 2.8vw, 2.35rem);
     }
 
     .airbnb-logo,
     .amazon-logo,
     .facebook-logo {
-        font-size: 2.7vw;
+        font-size: clamp(1.3rem, 2.7vw, 2.3rem);
     }
 
     .airbnb-logo span {
-        font-size: 3vw;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
     }
 
     .course-card {
-        height: 20.2vw;
+        height: clamp(12rem, 16vw, 15rem);
         min-height: 0;
-        border-radius: 2.3vw;
+        border-radius: clamp(1rem, 2.3vw, 1.5rem);
         box-shadow: 0 2px 3px #00000008;
     }
 
     .course-icon {
-        width: 3.7vw;
-        height: 3.7vw;
+        width: clamp(2.5rem, 3.7vw, 3rem);
+        height: clamp(2.5rem, 3.7vw, 3rem);
     }
 
     .course-icon svg {
-        width: 1.6vw;
-        height: 1.6vw;
+        width: clamp(1rem, 1.6vw, 1.25rem);
+        height: clamp(1rem, 1.6vw, 1.25rem);
     }
 
     .solution-art {
@@ -411,23 +748,23 @@ button.action-button:active {
     }
 
     .site-footer {
-        font-size: 1vw;
+        font-size: clamp(0.85rem, 1vw, 1rem);
         padding-top: 5.4vw;
     }
 
     .site-footer h2 {
-        font-size: 1.1vw;
+        font-size: clamp(0.9rem, 1.1vw, 1.1rem);
     }
 
     .site-footer p,
     .site-footer li,
     .site-footer input,
     .site-footer button {
-        font-size: 0.95vw;
+        font-size: clamp(0.8rem, 0.95vw, 0.95rem);
     }
 
     .site-footer .newsletter > p {
-        font-size: 0.85vw;
+        font-size: clamp(0.75rem, 0.85vw, 0.85rem);
     }
 
     .newsletter form {
@@ -458,7 +795,7 @@ button.action-button:active {
     }
 
     .footer-mark + span {
-        font-size: 1.5vw;
+        font-size: clamp(1rem, 1.5vw, 1.4rem);
     }
 
     .footer-bottom {
@@ -470,7 +807,7 @@ button.action-button:active {
     .social-link {
         width: 2.5vw;
         height: 2.5vw;
-        font-size: 1vw;
+        font-size: clamp(0.8rem, 1vw, 1rem);
     }
 }
 
@@ -499,6 +836,14 @@ button.action-button:active {
     button.action-button:active {
         transform: none;
         box-shadow: none;
+    }
+
+    .catalog-card {
+        transition: none;
+    }
+
+    .catalog-card:hover {
+        transform: none;
     }
 
     .company-track {
