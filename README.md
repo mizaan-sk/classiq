@@ -10,7 +10,7 @@ From the project folder, start a local server:
 py -m http.server 8000
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in a browser. The courses catalog is at `/courses/`; login and signup are at `/login/` and `/signup/`. Stop the server with `Ctrl+C`.
+Open [http://localhost:8000](http://localhost:8000) in a browser. The courses catalog is at `/courses/`; login and signup are at `/login` and `/signup`. Stop the server with `Ctrl+C`.
 
 You can also open `index.html` directly, but a local server is recommended for JavaScript modules.
 
